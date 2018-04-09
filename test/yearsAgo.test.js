@@ -1,13 +1,9 @@
 describe('yearsAgo' , function(){
     it('should state how many years ago' , function(){
-        assert.equal(2,2);
-
-        assert.deepEqual([2,2],[2,2]);
+        assert.equal(yearsAgo("1994"),24);
     });
-    it('should return the date' , function(){
-        assert.equal(2,2);
-
-        assert.deepEqual([2,2],[2,2]);
+    it('should return ' , function(){
+        assert.equal(yearsAgo(""),2);
     });
 
 });
