@@ -3,6 +3,6 @@ describe('mostProfitableDepartment' , function(){
         assert.equal(mostProfitableDepartment('proft'), ' ');
     });
     it('must show the least profitable department', function(){
-        assert.equal(mostProfitableDepartment('lost'), ' ');
+        assert.equal(mostProfitableDepartment('loss'), ' ');
     });
 });
