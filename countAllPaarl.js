@@ -1,13 +1,16 @@
-function fromWhere(regNo){
- if (regNo.startsWith("CY")){
-   return "Bellville";
-}
-  else if(regNo.startsWith("CJ")){
-    return "Paarl";
+function countAllPaarl(regNoString){
+  var regNo = regNoString.split(',');
+  var allPaarl = [];
+  console.log(regNo);
+
+  for (var k = 0; k < regNo.length ; k++){
+  	if (regNo[k].trim().startsWith("CJ")){
+
+      allPaarl.push(regNo[k]);
+    }
+     //return allPaarl.length;
   }
-  else if (regNo.startsWith("CA")){
-    return "Cape Town";
-  }else{
-    return "Some other place!";
-  }
+    console.log(regNo);
+
+  return allPaarl.length;
 }

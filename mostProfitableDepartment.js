@@ -12,9 +12,9 @@ function mostProfitableDepartment(department)
     }
     profit[data.department] += data.sales
   }
-  for(var lulo in profit){
-    if(profit[lulo]>profitable){
-      profitable=profit[lulo];
+  for(var outdoor in profit){
+    if(profit[outdoor]>profitable){
+      profitable=profit[outdoor];
 
     }
   }
